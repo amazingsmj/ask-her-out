@@ -1,0 +1,121 @@
+/* Styles généraux */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: skyblue;
+    margin: 0;
+    padding: 0;
+     /*
+    background-color: #f9f7a6;
+    background-color: #e6e6fa;
+    background-color: #f8d7da;
+    */
+}
+
+.header_text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: rgb(233, 48, 48);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+#noButton {
+    position: absolute;
+    transition: 0.5s;
+}
+
+#yesButton {
+    position: absolute;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsivité pour les petits écrans */
+@media only screen and (max-width: 768px) {
+    .header_text {
+        font-size: 32px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    #noButton, #yesButton {
+        margin-left: 0;
+        margin-right: 0;
+        width: 45%;
+    }
+}
+
+/* Responsivité pour les très petits écrans */
+@media only screen and (max-width: 414px) {
+    .header_text {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    #noButton, #yesButton {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .header_text {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 10px;
+    }
+
+    img {
+        height: 50vh;
+    }
+}
+
